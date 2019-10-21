@@ -8,7 +8,7 @@ import java.util.*;
 import java.awt.event.*;
 
 
-public class BeBo {  // implements MetaEventListener 
+public class BeBo { 
 
       JPanel mainPanel;
       ArrayList<JCheckBox> checkboxList;
@@ -62,7 +62,7 @@ public class BeBo {  // implements MetaEventListener
           saveIt.addActionListener(new MySendListener());
           buttonBox.add(saveIt);
 
-          JButton restore = new JButton("Restore");     // new button
+          JButton restore = new JButton("Restore");     
           restore.addActionListener(new MyReadInListener());
           buttonBox.add(restore);
 
