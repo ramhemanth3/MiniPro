@@ -145,10 +145,7 @@ public class BeBo {
      } // close outer
 
      track.add(makeEvent(192,9,1,0,15)); // - so we always go to full 16 beats 
-               
-   
-      
-       try {
+     try {
            
            sequencer.setSequence(sequence);  
            sequencer.setLoopCount(sequencer.LOOP_CONTINUOUSLY);                  
@@ -241,10 +238,7 @@ public class BeBo {
         sequencer.stop(); 
         buildTrackAndStart();
       } // close method
-  } // close inner class
-
-
-//==============================================================       
+  } 
 
      public void makeTracks(int[] list) {
 
