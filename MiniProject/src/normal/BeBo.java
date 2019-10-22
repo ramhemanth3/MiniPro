@@ -41,9 +41,9 @@ public class BeBo {
           checkboxList = new ArrayList<JCheckBox>();
           Box buttonBox = new Box(BoxLayout.Y_AXIS);
 
-          JButton start = new JButton("Start");
-          start.addActionListener(new MyStartListener());
-          buttonBox.add(start);
+          JButton play = new JButton("PLAY");
+          play.addActionListener(new MyStartListener());
+          buttonBox.add(play);
           
           
           JButton stop = new JButton("Stop");
