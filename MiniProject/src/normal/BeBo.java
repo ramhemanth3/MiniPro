@@ -36,33 +36,41 @@ public class BeBo {
           theFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
           BorderLayout layout = new BorderLayout();
           JPanel background = new JPanel(layout);
-          background.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+          background.setBorder(BorderFactory.createEmptyBorder(15,15,15,15));
 
           checkboxList = new ArrayList<JCheckBox>();
           Box buttonBox = new Box(BoxLayout.Y_AXIS);
-
-          JButton play = new JButton("PLAY");
+          
+          Font font1 = new Font( "GOTHIC", Font.BOLD, 14);
+          
+          JButton play = new JButton("Play");
+          play.setFont(font1);
           play.addActionListener(new MyStartListener());
           buttonBox.add(play);
           
           
           JButton stop = new JButton("Stop");
+          stop.setFont(font1);
           stop.addActionListener(new MyStopListener());
           buttonBox.add(stop);
 
           JButton upTempo = new JButton("Tempo Up");
+          upTempo.setFont(font1);
           upTempo.addActionListener(new MyUpTempoListener());
           buttonBox.add(upTempo);
 
            JButton downTempo = new JButton("Tempo Down");
+           downTempo.setFont(font1);
           downTempo.addActionListener(new MyDownTempoListener());
           buttonBox.add(downTempo);
 
-          JButton saveIt = new JButton("Serialize It");  // new button
-          saveIt.addActionListener(new MySendListener());
-          buttonBox.add(saveIt);
+          JButton store = new JButton("Store");  
+          store.setFont(font1);
+          store.addActionListener(new MySendListener());
+          buttonBox.add(store);
 
-          JButton restore = new JButton("Restore");     
+          JButton restore = new JButton("Restore");   
+          restore.setFont(font1);
           restore.addActionListener(new MyReadInListener());
           buttonBox.add(restore);
 
