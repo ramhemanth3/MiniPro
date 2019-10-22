@@ -155,8 +155,6 @@ public class BeBo {
  
       } // close method
             
-//============================================================== inner class listeners           
-       
       public class MyStartListener implements ActionListener {
         public void actionPerformed(ActionEvent a) {
              buildTrackAndStart();
@@ -275,4 +273,4 @@ public class BeBo {
 */
 
 
-   } // close class
+   } 
