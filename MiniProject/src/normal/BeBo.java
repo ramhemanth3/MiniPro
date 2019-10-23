@@ -103,7 +103,7 @@ public class BeBo {
           theFrame.setBounds(50,50,300,300);
           theFrame.pack();
           theFrame.setVisible(true);
-        } // close method
+        } 
 
 
      public void setUpMidi() {
