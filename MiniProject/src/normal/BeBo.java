@@ -46,7 +46,7 @@ public class BeBo {
           JButton play = new JButton("Play");
           play.setFont(font1);
           play.addActionListener(new MyStartListener());
-          buttonBox.add(play);
+          buttonBox.add(play);//hell Yeah
           
           
           JButton stop = new JButton("Stop");
