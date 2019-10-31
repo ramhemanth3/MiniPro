@@ -46,7 +46,7 @@ public class BeBo {  // implements MetaEventListener
       public void startUp(String name) {
           userName = name;
           try {
-              Socket sock = new Socket("127.0.0.1", 8087);
+              Socket sock = new Socket("127.0.0.1", 8090);
               out = new ObjectOutputStream(sock.getOutputStream());
               in = new ObjectInputStream(sock.getInputStream());
               Thread remote = new Thread(new RemoteReader());
@@ -72,7 +72,6 @@ public class BeBo {  // implements MetaEventListener
           JButton start = new JButton("Start");
           start.addActionListener(new MyStartListener());
           buttonBox.add(start);
-          
           
           JButton stop = new JButton("Stop");
           stop.addActionListener(new MyStopListener());

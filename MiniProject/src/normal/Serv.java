@@ -42,7 +42,7 @@ public class Serv
     public void go() {
         clientOutputStreams = new ArrayList();
         try {
-            ServerSocket serverSock = new ServerSocket(8087);
+            ServerSocket serverSock = new ServerSocket(8090);
             while(true) {
                 Socket clientSocket = serverSock.accept();
                 ObjectOutputStream out = new ObjectOutputStream(clientSocket.getOutputStream());
